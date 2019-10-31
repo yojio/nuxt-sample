@@ -1,0 +1,26 @@
+{
+  "name": "nuxt-sample",
+  "version": "1.0.0",
+  "description": "nuxt sample project",
+  "author": "Yoji Aono",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "nuxt": "^2.10.2",
+    "nuxt-property-decorator": "^2.5.0",
+    "ts-node": "^8.4.1"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "^0.3.2",
+    "node-sass": "^4.13.0",
+    "nodemon": "^1.18.9",
+    "sass-loader": "^8.0.0"
+  }
+}
